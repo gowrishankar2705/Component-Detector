@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 22
+names: ['Breadboard', 'Button', 'Buzzer', 'Infared_Sensor', 'Keypad', 'LCD', 'LED', 'LED_Matrix', 'Number_LED', 'Photoresistor', 'Potentiometer', 'Remote', 'Resistor', 'Rheostat', 'Servo_Engine', 'Thermistor', 'Tool_Box', 'Tool_Box_Tray', 'UNO_R3', 'USB_Cable', 'Ultrasonic_Sensor', 'Wire']
+
+roboflow:
+  workspace: fa23ai02-objdetection-2
+  project: full-cable
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/fa23ai02-objdetection-2/full-cable/dataset/2

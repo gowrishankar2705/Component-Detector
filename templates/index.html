@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Real-Time Component Detector</title>
+</head>
+<body>
+  <h1>Real-Time Component Detector</h1>
+
+  <!-- This img pulls in your MJPEG stream -->
+  <img
+    id="camera-stream"
+    src="{{ url_for('video_feed') }}"
+    width="640"
+    height="480"
+    style="border:1px solid #333;"
+  />
+
+  <div>
+    <button id="ask-btn">What is this?</button>
+    <p id="answer"></p>
+  </div>
+
+  <script>
+    document.querySelector('#ask-btn').addEventListener('click', async () => {
+      const res = await fetch('/ask', { method: 'POST' });
+      const { answer } = await res.json();
+      document.querySelector('#answer').textContent = answer;
+    });
+  </script>
+</body>
+</html>

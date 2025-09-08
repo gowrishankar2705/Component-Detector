@@ -1,0 +1,6 @@
+path: C:\Users\gowri\OneDrive\Desktop\component_qna
+train: C:\Users\gowri\OneDrive\Desktop\component_qna\train\images
+val: C:\Users\gowri\OneDrive\Desktop\component_qna\valid\images
+
+nc: 3  # number of classes
+names: ['resistor', 'capacitor', 'inductor']  # replace with your actual class names

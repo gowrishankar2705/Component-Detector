@@ -1,0 +1,7 @@
+{
+  "resistor": "A resistor limits the current flow in a circuit. It's labeled with color bands indicating resistance value.",
+  "capacitor": "A capacitor stores electrical energy in an electric field, used for filtering and timing.",
+  "inductor": "An inductor stores energy in a magnetic field when current flows through it, often used in filters.",
+  "transistor": "A transistor can amplify or switch electronic signals, fundamental in digital and analog circuits.",
+  "diode": "A diode allows current to flow in one direction only, used for rectification and protection."
+}
